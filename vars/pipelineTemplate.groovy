@@ -13,7 +13,7 @@ def call(String type,Map map) {
             stages {
                 stage('单元测试') {
                     steps{
-                        unitTest(server)
+                        unitTest(server) // 可以直接使用同一个package里面的东西
                     }
                 }
             }
