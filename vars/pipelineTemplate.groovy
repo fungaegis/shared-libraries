@@ -12,11 +12,13 @@ def call(String type,Map map) {
                     steps{
                         unitTest(server) // 可以直接使用同一个package里面的东西
                         // log.info('xixixixixixixi' + server)  // Method calls on objects not allowed outside "script" blocks
+                        def request = libraryResource 'hello_world.json'
                         script {
                             log.info('xixixixixixixi' + server)
+                            
+                            println request
                         }
-                        def request = libraryResource 'hello_world.json'
-                        echo request
+                        
                     }
                 }
             }
