@@ -9,3 +9,8 @@ class GlobalVars {
    // import com.cleverbuilder.GlobalVars
    // println GlobalVars.foo
 }
+
+
+def test(name) {
+    echo "myname" + name
+}
