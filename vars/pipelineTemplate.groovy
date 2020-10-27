@@ -1,8 +1,5 @@
 #!/usr/bin/env groovy
 
-// library 'share-library'
-// import com.unitTest
-
 def call(String type,Map map) {
     if (type == "golang") {
         pipeline {
@@ -14,6 +11,8 @@ def call(String type,Map map) {
                 stage('单元测试') {
                     steps{
                         unitTest(server) // 可以直接使用同一个package里面的东西
+                        import com.cleverbuilder.GlobalVars
+                        println GlobalVars.foo
                     }
                 }
             }
