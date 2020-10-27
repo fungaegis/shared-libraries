@@ -1,6 +1,4 @@
 #!/usr/bin/env groovy
-import com.param.GlobalVarssrc
-
 
 def call(String type,Map map) {
     if (type == "golang") {
@@ -13,7 +11,7 @@ def call(String type,Map map) {
                 stage('单元测试') {
                     steps{
                         unitTest(server) // 可以直接使用同一个package里面的东西
-                        echo GlobalVars.foo
+                        echo com.param.GlobalVars.foo
                     }
                 }
             }
