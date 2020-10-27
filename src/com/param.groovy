@@ -3,7 +3,7 @@ package com.param
 
 class GlobalVars {
    static String foo = "bar"
-   println "myname"
+//    println "myname"
    // refer to this in a pipeline using:
    //
    // import com.cleverbuilder.GlobalVars
