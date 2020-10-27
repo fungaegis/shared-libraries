@@ -18,10 +18,10 @@ def call(String type,Map map) {
                             def res = libraryResource 'hello_world.json' // 使用外部资源
                             echo res
                             
-                            def lib = library('shared-libraries-Demo').com.param.GlobalVars
+                            def lib = library('shared-libraries-Demo').com.param
 
                             // @Library('shared-libraries-Demo') import static com.param.GlobalVars.*
-                            echo lib.foo
+                            echo lib.GlobalVars.foo
                         }
                         
                     }
