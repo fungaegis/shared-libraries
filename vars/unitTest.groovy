@@ -3,6 +3,6 @@
 def call(String server){
     echo 'unittesting...............' + server
     echo server
-    def res = LibraryResource 'hello_world.json'
+    def res = libraryResource 'hello_world.json'
     echo res
 }
