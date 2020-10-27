@@ -13,7 +13,7 @@ def call(String type,Map map) {
             stages {
                 stage('单元测试') {
                     steps{
-                        unitTest()
+                        unitTest(server)
                     }
                 }
             }

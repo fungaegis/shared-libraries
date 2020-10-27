@@ -1,5 +1,6 @@
 #!/usr/bin/env groovy
 
-def call(){
+def call(String server){
     echo 'unittesting...............'
+    echo server
 }
