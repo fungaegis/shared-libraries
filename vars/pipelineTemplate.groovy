@@ -19,6 +19,7 @@ def call(String type,Map map) {
                             echo res
 
                             def a = new com.param()
+                            a.GlobalVars()
                             a.test("......................222222222222222222222====================")
                         }
                         
