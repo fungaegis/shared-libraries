@@ -18,8 +18,8 @@ def call(String type,Map map) {
                             def res = libraryResource 'hello_world.json' // 使用外部资源
                             echo res
 
-                            def a = new com.param()
-                            def b = a.GlobalVars.foo
+                            def a = new com.param.GlobalVars()
+                            def b = a.foo
                             echo b
 
                         }
