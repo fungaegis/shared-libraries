@@ -11,7 +11,6 @@ def call(String type,Map map) {
                 stage('单元测试') {
                     steps{
                         unitTest(server) // 可以直接使用同一个package里面的东西
-                        echo com.param.GlobalVars.foo
                     }
                 }
             }
