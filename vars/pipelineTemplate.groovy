@@ -17,10 +17,6 @@ def call(String type,Map map) {
                             log.info('xixixixixixixi' + server)
                             def res = libraryResource 'hello_world.json' // 使用外部资源
                             echo res
-
-                            def a = new com.param()
-                            a.GlobalVars()
-                            a.test("......................222222222222222222222====================")
                         }
                         
                     }
