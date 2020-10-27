@@ -15,6 +15,8 @@ def call(String type,Map map) {
                         script {
                             log.info('xixixixixixixi' + server)
                         }
+                        def request = libraryResource 'hello_world.json'
+                        echo request
                     }
                 }
             }
