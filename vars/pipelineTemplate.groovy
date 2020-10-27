@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 
 // library 'share-library'
-import com.unitTest
+// import com.unitTest
 
 def call(String type,Map map) {
     if (type == "golang") {
@@ -13,7 +13,7 @@ def call(String type,Map map) {
             stages {
                 stage('单元测试') {
                     steps{
-                        unitTest.call
+                        unitTest()
                     }
                 }
             }
